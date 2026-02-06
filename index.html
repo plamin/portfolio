@@ -1,61 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lamin | Dev Back-end</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/icons/github.svg" type="image/x-icon">
 </head>
+
 <body>
 
     <header>
         <nav class="navbar">
-            <div class="logo"><<span>/</span>></div>
+            <div class="logo">
+                <<span>/</span>>
+            </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
             </ul>
+
         </nav>
 
         <div class="hero">
+
+            <div class="social-icons">
+                <a href="https://github.com/plamin" target="_blank"><img src="assets/icons/github.svg" alt="GitHub"></a>
+                <a href="https://linkedin.com/in/pedro-lamin" target="_blank"><img src="assets/icons/linkedin.svg"
+                        alt="LinkedIn"></a>
+                <a href="mailto:pedrolaminrdg@gmail.com"><img src="assets/icons/gmail.svg" alt="Email"></a>
+            </div>
+
             <h2>HELLO, I'M</h2>
             <h1><span>Pedro Lamin</span></h1>
             <h2 class="typing-container"><span id="text-dev"></span><span class="cursor"></span></h2>
-            <a href="#projects" class="btn">See Projects</a>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">See Projects</a>
+                <a href="assets/CV_Pedro Henrique Lamin Rodrigues.pdf" class="btn download-btn" download>Download
+                    CV</a>
+            </div>
+
         </div>
+
     </header>
+
+    <section id="about">
+        <h2 class="subs">😄 About me</h2>
+
+        <div class="about-container">
+            <div class="about-photo">
+                <img src="assets/icons/Pedro.jpg" alt="Pedro Lamin">
+            </div>
+
+            <div class="about-text">
+                <p>
+                    I am a Software Engineering student with a strong interest in back-end development and data. 
+                    I enjoy understanding how applications work behind the scenes, from business logic to data modeling and persistence. 
+                    I have experience working with Java, Python, and SQL.
+                </p>
+                <p>
+                    I am currently seeking an internship where I can apply my knowledge, gain hands-on experience, and continue learning in a real-world environment. 
+                    I am motivated, curious, and always willing to learn, 
+                    especially in back-end development and data-related areas, and I am eager to grow as a software developer.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
 
     <section id="skills">
         <h2 class="subs">🛠️ Skills</h2>
-        
+
         <div class="skills-marquee">
             <div class="skills-track">
-                <button class="skill" data-level="Intermediate" data-summary="Consultas, joins e modelagem de dados."><img src="assets/skills/sql.svg" alt="SQL"></button>
-                <button class="skill" data-level="Advanced" data-summary="Análise de dados, consumo de APIs e scripts de automação."><img src="assets/skills/python.svg" alt="Python"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Programação Orientada a Objetos."><img src="assets/skills/java.svg" alt="Java"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Versionamento."><img src="assets/skills/git.svg" alt="GitHub"></button>
-                <button class="skill" data-level="Advanced" data-summary="Dashboards complexos e Power Query."><img src="assets/skills/excel.svg" alt="Excel"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Dashboards."><img src="assets/skills/bi.webp" alt="Power BI"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Consultas, joins e modelagem de dados."><img src="assets/skills/sql.svg" alt="SQL"></button>
-                <button class="skill" data-level="Advanced" data-summary="Análise de dados, consumo de APIs e scripts de automação."><img src="assets/skills/python.svg" alt="Python"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Programação Orientada a Objetos."><img src="assets/skills/java.svg" alt="Java"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Versionamento."><img src="assets/skills/git.svg" alt="GitHub"></button>
-                <button class="skill" data-level="Advanced" data-summary="Dashboards complexos e Power Query."><img src="assets/skills/excel.svg" alt="Excel"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Dashboards."><img src="assets/skills/bi.webp" alt="Power BI"></button>
-                
-                <button class="skill" data-level="Intermediate" data-summary="Consultas, joins e modelagem de dados."><img src="assets/skills/sql.svg" alt="SQL"></button>
-                <button class="skill" data-level="Advanced" data-summary="Análise de dados, consumo de APIs e scripts de automação."><img src="assets/skills/python.svg" alt="Python"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Programação Orientada a Objetos."><img src="assets/skills/java.svg" alt="Java"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Versionamento."><img src="assets/skills/git.svg" alt="GitHub"></button>
-                <button class="skill" data-level="Advanced" data-summary="Tables and formulas."><img src="assets/skills/excel.svg" alt="Excel"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Dashboards."><img src="assets/skills/bi.webp" alt="Docker"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Consultas, joins e modelagem de dados."><img src="assets/skills/sql.svg" alt="SQL"></button>
-                <button class="skill" data-level="Advanced" data-summary="Análise de dados, consumo de APIs e scripts de automação."><img src="assets/skills/python.svg" alt="Python"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Programação Orientada a Objetos."><img src="assets/skills/java.svg" alt="Java"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Versionamento."><img src="assets/skills/git.svg" alt="GitHub"></button>
-                <button class="skill" data-level="Advanced" data-summary="Dashboards complexos e Power Query."><img src="assets/skills/excel.svg" alt="Excel"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Dashboards."><img src="assets/skills/bi.webp" alt="Power BI"></button>
+                <button class="skill" data-level="Intermediate" data-summary="Queries, joins, and data modeling."><img
+                        src="assets/skills/sql.svg" alt="SQL"></button>
+                <button class="skill" data-level="Advanced"
+                    data-summary="Data analysis, API consumption, and automation scripts."><img
+                        src="assets/skills/python.svg" alt="Python"></button>
+                <button class="skill" data-level="Intermediate" data-summary="Object-oriented programming."><img
+                        src="assets/skills/java.svg" alt="Java"></button>
+                <button class="skill" data-level="Intermediate" data-summary="Version control."><img
+                        src="assets/skills/git.svg" alt="Git"></button>
+                <button class="skill" data-level="Advanced" data-summary="Tables and formulas.."><img
+                        src="assets/skills/excel.svg" alt="Excel"></button>
+                <button class="skill" data-level="Intermediate" data-summary="Dashboards."><img
+                        src="assets/skills/bi.webp" alt="Power BI"></button>
+                <button class="skill" data-level="Intermediate" data-summary="Queries, joins, and data modeling."><img
+                        src="assets/skills/sql.svg" alt="SQL"></button>
+                <button class="skill" data-level="Advanced"
+                    data-summary="Data analysis, API consumption, and automation scripts."><img
+                        src="assets/skills/python.svg" alt="Python"></button>
+                <button class="skill" data-level="Intermediate" data-summary="Object-oriented programming."><img
+                        src="assets/skills/java.svg" alt="Java"></button>
+                <button class="skill" data-level="Intermediate" data-summary="Version control."><img
+                        src="assets/skills/git.svg" alt="Git"></button>
+                <button class="skill" data-level="Advanced" data-summary="Tables and formulas."><img
+                        src="assets/skills/excel.svg" alt="Excel"></button>
+                <button class="skill" data-level="Intermediate" data-summary="Dashboards."><img
+                        src="assets/skills/bi.webp" alt="Power BI"></button>
+
+                <button class="skill" data-level="Intermediate" data-summary="Queries, joins, and data modeling."><img
+                        src="assets/skills/sql.svg" alt="SQL"></button>
+                <button class="skill" data-level="Advanced"
+                    data-summary="Data analysis, API consumption, and automation scripts."><img
+                        src="assets/skills/python.svg" alt="Python"></button>
+                <button class="skill" data-level="Intermediate" data-summary="Object-oriented programming."><img
+                        src="assets/skills/java.svg" alt="Java"></button>
+                <button class="skill" data-level="Intermediate" data-summary="Version control."><img
+                        src="assets/skills/git.svg" alt="Git"></button>
+                <button class="skill" data-level="Advanced" data-summary="Tables and formulas."><img
+                        src="assets/skills/excel.svg" alt="Excel"></button>
+                <button class="skill" data-level="Intermediate" data-summary="Dashboards."><img
+                        src="assets/skills/bi.webp" alt="Power BI"></button>
+                <button class="skill" data-level="Intermediate" data-summary="Queries, joins, and data modeling."><img
+                        src="assets/skills/sql.svg" alt="SQL"></button>
+                <button class="skill" data-level="Advanced"
+                    data-summary="Data analysis, API consumption, and automation scripts."><img
+                        src="assets/skills/python.svg" alt="Python"></button>
+                <button class="skill" data-level="Intermediate" data-summary="Object-oriented programming."><img
+                        src="assets/skills/java.svg" alt="Java"></button>
+                <button class="skill" data-level="Intermediate" data-summary="Version control."><img
+                        src="assets/skills/git.svg" alt="Git"></button>
+                <button class="skill" data-level="Advanced" data-summary="Tables and formulas."><img
+                        src="assets/skills/excel.svg" alt="Excel"></button>
+                <button class="skill" data-level="Intermediate" data-summary="Dashboards."><img
+                        src="assets/skills/bi.webp" alt="Power BI"></button>
             </div>
         </div>
     </section>
@@ -68,22 +142,48 @@
 
     <section id="projects">
         <h2 class="subs">📦 Projects</h2>
+
         <div class="projects">
-            <div class="card">
-                <h3>API de Gestão</h3>
-                <p>Sistema back-end com Spring Boot e PostgreSQL.</p>
+
+            <div class="card project-card" data-project="email">
+                <h3>Automated Email Sending</h3>
+                <p>System for automated sending of emails for bill collection.</p>
+                <span class="read-more">Click to read more</span>
             </div>
-            <div class="card">
-                <h3>Data Analysis Dashboard</h3>
-                <p>Processamento de grandes volumes de dados com Python.</p>
+
+            <div class="card project-card" data-project="dashboard">
+                <h3>La Liga Data Analysis Dashboard</h3>
+                <p>Interactive dashboard for analyzing La Liga data with Python, processing, visualization, and insights
+                    generation.</p>
+                <span class="read-more">Click to read more</span>
+            </div>
+
+            <div class="card project-card" data-project="backend">
+                <h3>Recruitment page back-end</h3>
+                <p>Back-end system for candidate and recruiter registration and login.</p>
+                <span class="read-more">Click to read more</span>
+            </div>
+
+        </div>
+
+        <div class="project-modal" id="projectModal">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+                <a id="modalRepo" href="#" target="_blank" class="btn">
+                    Github Repository
+                </a>
             </div>
         </div>
     </section>
 
+
     <footer>
-        © <span id="year"></span> • Pedro Lamin • Back-end Developer
+        © <span id="year"></span> • Pedro Lamin
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
