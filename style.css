@@ -274,13 +274,27 @@ footer {
     color: #020617;
 }
 
-
 .project-card {
     cursor: pointer;
     transition: 0.3s ease;
     position: relative;
     overflow: hidden;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
+.project-card p {
+    color: var(--muted);
+    margin-top: 10px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
 
 .project-card::after {
     content: "";
