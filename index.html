@@ -1,189 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lamin | Dev Back-end</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Lamin | Engenharia de Dados e Software</title>
+    <meta name="description" content="Portfólio de Pedro Lamin, estudante de Engenharia de Software com foco em Engenharia de Dados. Conheça meus projetos de análise de dados, automação com Python e back-end.">
+    <meta property="og:title" content="Pedro Lamin | Dados, Python e Software">
+    <meta property="og:description" content="Da análise da La Liga à automação de e-mails: conheça meus projetos e conhecimentos em Engenharia de Dados e Software.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="theme-color" content="#101817">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/icons/github.svg" type="image/x-icon">
+    <link rel="icon" href="assets/icons/monogram.svg" type="image/svg+xml">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
-
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <<span>/</span>>
-            </div>
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
+    <div class="data-intro" id="data-intro" aria-label="Abertura do portfólio">
+        <div class="intro-stage">
+        <nav class="navbar intro-topline" aria-label="Navegação principal">
+            <a class="logo" href="#top" aria-label="Pedro Lamin — início">pedro lamin<span aria-hidden="true">.</span></a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#projects">Projetos</a></li>
+
+                <li><a href="#skills">Conhecimentos</a></li>
+                <li><a href="#contact">Contato <span aria-hidden="true">↗</span></a></li>
             </ul>
-
         </nav>
-
-        <div class="hero">
-
-            <div class="social-icons">
-                <a href="https://github.com/plamin" target="_blank"><img src="assets/icons/github.svg" alt="GitHub"></a>
-                <a href="https://linkedin.com/in/pedro-lamin" target="_blank"><img src="assets/icons/linkedin.svg"
-                        alt="LinkedIn"></a>
-                <a href="mailto:pedrolaminrdg@gmail.com"><img src="assets/icons/gmail.svg" alt="Email"></a>
+            <div class="intro-composition">
+                <p class="intro-title">Engenheiro<br><span>de Dados</span></p>
+                <svg class="data-scene" viewBox="0 0 800 360" fill="none" aria-hidden="true">
+                    <defs><pattern id="data-grid" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#34433b"/></pattern></defs>
+                    <rect width="800" height="360" fill="url(#data-grid)"/>
+                    <g class="data-connections" stroke="#b1d5ae" stroke-width="1"><path d="M200 96H596M200 144H596M200 192H596M200 240H596"/><path d="M200 96V240M308 96V240M452 96V240M596 96V240"/></g>
+                    <g fill="#b1d5ae"><circle class="data-point" cx="36" cy="25" r="4" data-x="36" data-y="25" data-tx="200" data-ty="96"/><circle class="data-point" cx="173" cy="104" r="2.5" data-x="173" data-y="104" data-tx="236" data-ty="96"/><circle class="data-point" cx="310" cy="183" r="2.5" data-x="310" data-y="183" data-tx="272" data-ty="96"/><circle class="data-point" cx="447" cy="262" r="2.5" data-x="447" data-y="262" data-tx="308" data-ty="96"/><circle class="data-point" cx="584" cy="51" r="2.5" data-x="584" data-y="51" data-tx="344" data-ty="96"/><circle class="data-point" cx="721" cy="130" r="4" data-x="721" data-y="130" data-tx="380" data-ty="96"/><circle class="data-point" cx="130" cy="209" r="2.5" data-x="130" data-y="209" data-tx="416" data-ty="96"/><circle class="data-point" cx="267" cy="288" r="2.5" data-x="267" data-y="288" data-tx="452" data-ty="96"/><circle class="data-point" cx="404" cy="77" r="2.5" data-x="404" data-y="77" data-tx="488" data-ty="96"/><circle class="data-point" cx="541" cy="156" r="2.5" data-x="541" data-y="156" data-tx="524" data-ty="96"/><circle class="data-point" cx="678" cy="235" r="4" data-x="678" data-y="235" data-tx="560" data-ty="96"/><circle class="data-point" cx="87" cy="314" r="2.5" data-x="87" data-y="314" data-tx="596" data-ty="96"/><circle class="data-point" cx="224" cy="103" r="2.5" data-x="224" data-y="103" data-tx="200" data-ty="144"/><circle class="data-point" cx="361" cy="182" r="2.5" data-x="361" data-y="182" data-tx="236" data-ty="144"/><circle class="data-point" cx="498" cy="261" r="2.5" data-x="498" data-y="261" data-tx="272" data-ty="144"/><circle class="data-point" cx="635" cy="50" r="4" data-x="635" data-y="50" data-tx="308" data-ty="144"/><circle class="data-point" cx="44" cy="129" r="2.5" data-x="44" data-y="129" data-tx="344" data-ty="144"/><circle class="data-point" cx="181" cy="208" r="2.5" data-x="181" data-y="208" data-tx="380" data-ty="144"/><circle class="data-point" cx="318" cy="287" r="2.5" data-x="318" data-y="287" data-tx="416" data-ty="144"/><circle class="data-point" cx="455" cy="76" r="2.5" data-x="455" data-y="76" data-tx="452" data-ty="144"/><circle class="data-point" cx="592" cy="155" r="4" data-x="592" data-y="155" data-tx="488" data-ty="144"/><circle class="data-point" cx="729" cy="234" r="2.5" data-x="729" data-y="234" data-tx="524" data-ty="144"/><circle class="data-point" cx="138" cy="313" r="2.5" data-x="138" data-y="313" data-tx="560" data-ty="144"/><circle class="data-point" cx="275" cy="102" r="2.5" data-x="275" data-y="102" data-tx="596" data-ty="144"/><circle class="data-point" cx="412" cy="181" r="2.5" data-x="412" data-y="181" data-tx="200" data-ty="192"/><circle class="data-point" cx="549" cy="260" r="4" data-x="549" data-y="260" data-tx="236" data-ty="192"/><circle class="data-point" cx="686" cy="49" r="2.5" data-x="686" data-y="49" data-tx="272" data-ty="192"/><circle class="data-point" cx="95" cy="128" r="2.5" data-x="95" data-y="128" data-tx="308" data-ty="192"/><circle class="data-point" cx="232" cy="207" r="2.5" data-x="232" data-y="207" data-tx="344" data-ty="192"/><circle class="data-point" cx="369" cy="286" r="2.5" data-x="369" data-y="286" data-tx="380" data-ty="192"/><circle class="data-point" cx="506" cy="75" r="4" data-x="506" data-y="75" data-tx="416" data-ty="192"/><circle class="data-point" cx="643" cy="154" r="2.5" data-x="643" data-y="154" data-tx="452" data-ty="192"/><circle class="data-point" cx="52" cy="233" r="2.5" data-x="52" data-y="233" data-tx="488" data-ty="192"/><circle class="data-point" cx="189" cy="312" r="2.5" data-x="189" data-y="312" data-tx="524" data-ty="192"/><circle class="data-point" cx="326" cy="101" r="2.5" data-x="326" data-y="101" data-tx="560" data-ty="192"/><circle class="data-point" cx="463" cy="180" r="4" data-x="463" data-y="180" data-tx="596" data-ty="192"/><circle class="data-point" cx="600" cy="259" r="2.5" data-x="600" data-y="259" data-tx="200" data-ty="240"/><circle class="data-point" cx="737" cy="48" r="2.5" data-x="737" data-y="48" data-tx="236" data-ty="240"/><circle class="data-point" cx="146" cy="127" r="2.5" data-x="146" data-y="127" data-tx="272" data-ty="240"/><circle class="data-point" cx="283" cy="206" r="2.5" data-x="283" data-y="206" data-tx="308" data-ty="240"/><circle class="data-point" cx="420" cy="285" r="4" data-x="420" data-y="285" data-tx="344" data-ty="240"/><circle class="data-point" cx="557" cy="74" r="2.5" data-x="557" data-y="74" data-tx="380" data-ty="240"/><circle class="data-point" cx="694" cy="153" r="2.5" data-x="694" data-y="153" data-tx="416" data-ty="240"/><circle class="data-point" cx="103" cy="232" r="2.5" data-x="103" data-y="232" data-tx="452" data-ty="240"/><circle class="data-point" cx="240" cy="311" r="2.5" data-x="240" data-y="311" data-tx="488" data-ty="240"/><circle class="data-point" cx="377" cy="100" r="4" data-x="377" data-y="100" data-tx="524" data-ty="240"/><circle class="data-point" cx="514" cy="179" r="2.5" data-x="514" data-y="179" data-tx="560" data-ty="240"/><circle class="data-point" cx="651" cy="258" r="2.5" data-x="651" data-y="258" data-tx="596" data-ty="240"/></g>
+                </svg>
+                <div class="intro-phases" aria-hidden="true"><span>01 / Coletar</span><span>02 / Organizar</span><span>03 / Conectar</span></div>
             </div>
-
-            <h2>HELLO, I'M</h2>
-            <h1><span>Pedro Lamin</span></h1>
-            <h2 class="typing-container"><span id="text-dev"></span><span class="cursor"></span></h2>
-
-            <div class="hero-buttons">
-                <a href="#projects" class="btn">See Projects</a>
-                <a href="assets/CV_Pedro Henrique Lamin Rodrigues.pdf" class="btn download-btn" download>Download
-                    CV</a>
-            </div>
-
+            <a class="intro-scroll intro-enter" href="#top"><span>Role para explorar</span><span class="intro-scroll-line" aria-hidden="true"></span><span aria-hidden="true">↓</span></a>
         </div>
-
-    </header>
-
-    <section id="about">
-        <h2 class="subs">😄 About me</h2>
-
-        <div class="about-container">
-            <div class="about-photo">
-                <img src="assets/icons/Pedro.jpg" alt="Pedro Lamin">
-            </div>
-
-            <div class="about-text">
-                <p>
-                    I am a Software Engineering student with a strong interest in back-end development and data. 
-                    I enjoy understanding how applications work behind the scenes, from business logic to data modeling and persistence. 
-                    I have experience working with Java, Python, and SQL.
-                </p>
-                <p>
-                    I am currently seeking an internship where I can apply my knowledge, gain hands-on experience, and continue learning in a real-world environment. 
-                    I am motivated, curious, and always willing to learn, 
-                    especially in back-end development and data-related areas, and I am eager to grow as a software developer.
-                </p>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section id="skills">
-        <h2 class="subs">🛠️ Skills</h2>
-
-        <div class="skills-marquee">
-            <div class="skills-track">
-                <button class="skill" data-level="Intermediate" data-summary="Queries, joins, and data modeling."><img
-                        src="assets/skills/sql.svg" alt="SQL"></button>
-                <button class="skill" data-level="Advanced"
-                    data-summary="Data analysis, API consumption, and automation scripts."><img
-                        src="assets/skills/python.svg" alt="Python"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Object-oriented programming."><img
-                        src="assets/skills/java.svg" alt="Java"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Version control."><img
-                        src="assets/skills/git.svg" alt="Git"></button>
-                <button class="skill" data-level="Advanced" data-summary="Tables and formulas.."><img
-                        src="assets/skills/excel.svg" alt="Excel"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Dashboards."><img
-                        src="assets/skills/bi.webp" alt="Power BI"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Queries, joins, and data modeling."><img
-                        src="assets/skills/sql.svg" alt="SQL"></button>
-                <button class="skill" data-level="Advanced"
-                    data-summary="Data analysis, API consumption, and automation scripts."><img
-                        src="assets/skills/python.svg" alt="Python"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Object-oriented programming."><img
-                        src="assets/skills/java.svg" alt="Java"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Version control."><img
-                        src="assets/skills/git.svg" alt="Git"></button>
-                <button class="skill" data-level="Advanced" data-summary="Tables and formulas."><img
-                        src="assets/skills/excel.svg" alt="Excel"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Dashboards."><img
-                        src="assets/skills/bi.webp" alt="Power BI"></button>
-
-                <button class="skill" data-level="Intermediate" data-summary="Queries, joins, and data modeling."><img
-                        src="assets/skills/sql.svg" alt="SQL"></button>
-                <button class="skill" data-level="Advanced"
-                    data-summary="Data analysis, API consumption, and automation scripts."><img
-                        src="assets/skills/python.svg" alt="Python"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Object-oriented programming."><img
-                        src="assets/skills/java.svg" alt="Java"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Version control."><img
-                        src="assets/skills/git.svg" alt="Git"></button>
-                <button class="skill" data-level="Advanced" data-summary="Tables and formulas."><img
-                        src="assets/skills/excel.svg" alt="Excel"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Dashboards."><img
-                        src="assets/skills/bi.webp" alt="Power BI"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Queries, joins, and data modeling."><img
-                        src="assets/skills/sql.svg" alt="SQL"></button>
-                <button class="skill" data-level="Advanced"
-                    data-summary="Data analysis, API consumption, and automation scripts."><img
-                        src="assets/skills/python.svg" alt="Python"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Object-oriented programming."><img
-                        src="assets/skills/java.svg" alt="Java"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Version control."><img
-                        src="assets/skills/git.svg" alt="Git"></button>
-                <button class="skill" data-level="Advanced" data-summary="Tables and formulas."><img
-                        src="assets/skills/excel.svg" alt="Excel"></button>
-                <button class="skill" data-level="Intermediate" data-summary="Dashboards."><img
-                        src="assets/skills/bi.webp" alt="Power BI"></button>
-            </div>
-        </div>
-    </section>
-
-    <div id="skillTooltip" class="skill-tooltip" hidden>
-        <div id="skillTooltipTitle" class="skill-tooltip__title"></div>
-        <div id="skillTooltipLevel" class="skill-tooltip__level"></div>
-        <div id="skillTooltipSummary" class="skill-tooltip__summary"></div>
     </div>
-
-    <section id="projects">
-        <h2 class="subs">📦 Projects</h2>
-
-        <div class="projects">
-
-            <div class="card project-card" data-project="email">
-                <h3>Automated Email Sending</h3>
-                <p>System for automated sending of emails for bill collection.</p>
-                <span class="read-more">Click to read more</span>
-            </div>
-
-            <div class="card project-card" data-project="dashboard">
-                <h3>La Liga Data Analysis Dashboard</h3>
-                <p>Interactive dashboard for analyzing La Liga data with Python, processing, visualization, and insights
-                    generation.</p>
-                <span class="read-more">Click to read more</span>
-            </div>
-
-            <div class="card project-card" data-project="backend">
-                <h3>Recruitment page back-end</h3>
-                <p>Back-end system for candidate and recruiter registration and login.</p>
-                <span class="read-more">Click to read more</span>
-            </div>
-
-        </div>
-
-        <div class="project-modal" id="projectModal">
-            <div class="modal-content">
-                <button class="close-modal">&times;</button>
-                <h3 id="modalTitle"></h3>
-                <p id="modalDescription"></p>
-                <a id="modalRepo" href="#" target="_blank" class="btn">
-                    Github Repository
-                </a>
+    <header id="top">
+        <div class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Dados · Cloud · Inteligência Artificial</p>
+                <h1>Sobre mim<span aria-hidden="true">.</span></h1>
+                <div class="hero-description">
+                    <p>Sou estudante de Engenharia de Software na FIAP, técnico em Redes de Computadores pelo IFSP e estagiário em Dados no Itaú Unibanco. Meu foco de carreira é Engenharia de Dados, área em que venho aprofundando conhecimentos em cloud, SQL, Spark, modelagem e pipelines de dados.</p>
+                    <p>Tenho conhecimentos em Python, SQL, Java e AWS, com certificações AWS Certified Cloud Practitioner e AWS Certified AI Practitioner. Desenvolvo projetos que envolvem consumo de APIs, tratamento e análise de dados, automação e desenvolvimento back-end, explorando desde a ingestão dos dados até sua organização e visualização.</p>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Conheça meus projetos <span aria-hidden="true">↓</span></a>
+                    <a href="assets/Curriculo_Pedro_Henrique_Data_Engineer.pdf" class="text-link" download>Baixar currículo <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="social-icons" aria-label="Redes profissionais">
+                    <a href="https://github.com/plamin" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                    <a href="https://linkedin.com/in/pedro-lamin" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                    <a href="mailto:pedrolaminrdg@gmail.com">E-mail <span aria-hidden="true">↗</span></a>
+                </div>
             </div>
         </div>
-    </section>
-
-
-    <footer>
-        © <span id="year"></span> • Pedro Lamin
-    </footer>
-
-    <script src="script.js"></script>
+        <div class="intro-note"><span class="eyebrow">Neste portfólio</span><p>Futebol em dados. Rotinas em Python. Sistemas de cadastro.</p><a href="#projects" aria-label="Ir para projetos">↓</a></div>
+    </header>
+    <main id="main" tabindex="-1">
+        <section id="projects" aria-labelledby="projects-title">
+<div class="section-heading"><p class="eyebrow">01 / Projetos selecionados</p><h2 id="projects-title">O que venho construindo.</h2><p>Explore os projetos e abra os detalhes para conhecer cada um.</p></div>
+<div class="carousel" role="region" aria-roledescription="carrossel" aria-label="Projetos selecionados">
+<div class="carousel-toolbar"><p id="carousel-status" aria-live="polite" aria-atomic="true">Projeto 1 de 3</p><div class="carousel-controls"><button type="button" class="carousel-arrow" id="project-prev" aria-label="Projeto anterior" aria-controls="project-track" disabled>←</button><button type="button" class="carousel-arrow" id="project-next" aria-label="Próximo projeto" aria-controls="project-track">→</button></div></div>
+<div class="project-track" id="project-track" tabindex="0" aria-label="Projetos: deslize ou use as setas do teclado">
+<article class="project-slide" role="group" aria-roledescription="slide" aria-label="1 de 3" aria-labelledby="laliga-title">
+<div class="project-copy"><p class="project-category">Análise de dados / 01</p><h3 id="laliga-title">La Liga, além do placar.</h3><p>Um pipeline em Python e um dashboard para explorar partidas, jogadores e equipes.</p><ul class="tags" aria-label="Tecnologias"><li>Python</li><li>pandas</li><li>Streamlit</li><li>Plotly</li></ul><button type="button" class="btn btn-primary project-open" data-project="laliga" aria-haspopup="dialog">Ver detalhes do projeto <span aria-hidden="true">↗</span></button></div>
+<div class="project-visual" aria-hidden="true"><span class="eyebrow">Análise de dados</span><div class="pitch" aria-hidden="true"><div class="pitch-center"></div><span class="pitch-ball"></span></div><p>API REST → Python / pandas → Dashboard</p><span class="visual-note">Esquema conceitual</span></div>
+</article>
+<article class="project-slide" role="group" aria-roledescription="slide" aria-label="2 de 3" aria-labelledby="email-title">
+<div class="project-copy"><p class="project-category">Automação / 02</p><h3 id="email-title">Da leitura dos dados ao envio do e-mail.</h3><p>Automação de cobranças com validações e mensagens personalizadas em Python.</p><ul class="tags" aria-label="Tecnologias"><li>Python</li><li>SMTP</li><li>Validação de dados</li></ul><button type="button" class="btn btn-primary project-open" data-project="email" aria-haspopup="dialog">Ver detalhes do projeto <span aria-hidden="true">↗</span></button></div>
+<div class="project-visual" aria-hidden="true"><span class="eyebrow">Automação</span><ol class="flow-steps"><li><span>01</span><strong>Leitura dos dados</strong></li><li><span>02</span><strong>Validação e mensagem</strong></li><li><span>03</span><strong>Envio via SMTP</strong></li></ol><p>Dados → Validação → E-mail</p><span class="visual-note">Esquema conceitual</span></div>
+</article>
+<article class="project-slide" role="group" aria-roledescription="slide" aria-label="3 de 3" aria-labelledby="recruitment-title">
+<div class="project-copy"><p class="project-category">Back-end / 03</p><h3 id="recruitment-title">Cadastro e login para recrutamento.</h3><p>Um sistema em Python para candidatos e recrutadores, com persistência em JSON.</p><ul class="tags" aria-label="Tecnologias"><li>Python</li><li>JSON</li><li>Cadastro e login</li></ul><button type="button" class="btn btn-primary project-open" data-project="recruitment" aria-haspopup="dialog">Ver detalhes do projeto <span aria-hidden="true">↗</span></button></div>
+<div class="project-visual" aria-hidden="true"><span class="eyebrow">Back-end</span><ol class="flow-steps"><li><span>01</span><strong>Candidatos e recrutadores</strong></li><li><span>02</span><strong>Cadastro e login</strong></li><li><span>03</span><strong>Persistência em JSON</strong></li></ol><p>Cadastro → Python → JSON</p><span class="visual-note">Esquema conceitual</span></div>
+</article>
+</div>
+<div class="carousel-dots" aria-label="Escolher projeto"><button type="button" data-slide="0" aria-label="Mostrar projeto 1: Dashboard de Estatísticas da La Liga" aria-current="true"><span></span></button><button type="button" data-slide="1" aria-label="Mostrar projeto 2: Envio automatizado de e-mails" ><span></span></button><button type="button" data-slide="2" aria-label="Mostrar projeto 3: Plataforma de recrutamento" ><span></span></button></div>
+</div>
+</section>
+        <section id="skills" class="split-section" aria-labelledby="skills-title"><div class="section-heading"><p class="eyebrow">02 / Conhecimentos</p><h2 id="skills-title">Conhecimentos<br>e ferramentas.</h2><p>Dados, cloud e desenvolvimento de software.</p><div class="credentials"><h3>Certificações AWS</h3><p>AWS Certified Cloud Practitioner</p><p>AWS Certified AI Practitioner</p></div></div><div class="skills-list"><div class="skill-group"><h3>Engenharia e análise de dados</h3><dl><dt>Linguagens e análise</dt><dd>Python, pandas, SQL, análise exploratória, testes de hipótese, normalidade e Wilcoxon.</dd><dt>Pipelines e modelagem</dt><dd>ETL/pipelines, modelagem relacional e dimensional, Data Lake, Data Warehouse e Data Mesh.</dd><dt>Visualização e processamento</dt><dd>Streamlit, Plotly, NumPy, Requests e exportação de dados em CSV.</dd></dl></div><div class="skill-group"><h3>Cloud / AWS</h3><dl><dt>Computação e arquitetura</dt><dd>EC2, Lambda, ECS/EKS e fundamentos de arquitetura cloud.</dd><dt>Armazenamento e dados</dt><dd>S3, RDS, Redshift, DynamoDB e DMS.</dd><dt>Integração</dt><dd>Kinesis, SQS e SNS.</dd><dt>Segurança e operação</dt><dd>CloudWatch, CloudTrail, VPC, IAM/Organizations e KMS.</dd></dl></div><div class="skill-group"><h3>Big Data e streaming</h3><dl><dt>Processamento</dt><dd>Spark, Catalyst, processamento distribuído e MapReduce.</dd><dt>Streaming</dt><dd>Kafka (conceitos).</dd></dl></div><div class="skill-group"><h3>Desenvolvimento back-end</h3><dl><dt>Tecnologias</dt><dd>Java, Spring Boot, Flask, Maven e JSON.</dd><dt>APIs e arquitetura</dt><dd>APIs REST, integração com APIs, Gemini API, DDD, Value Objects, serviços, eventos e repositórios.</dd></dl></div><div class="skill-group"><h3>Bancos de dados</h3><dl><dt>Bancos e modelagem</dt><dd>SQL, MongoDB/NoSQL, modelagem relacional e dimensional.</dd><dt>Conceitos</dt><dd>Bancos orientados a documento, chave-valor e grafos.</dd></dl></div><div class="skill-group"><h3>Web, ferramentas e automação</h3><dl><dt>Web</dt><dd>JavaScript, HTML e CSS.</dd><dt>Desenvolvimento</dt><dd>Git, GitHub, VS Code e IntelliJ.</dd><dt>Automação corporativa</dt><dd>Power Apps, Power Automate e SharePoint: formulários, validações, filtros, regras de edição e automação de fluxos.</dd><dt>Redes</dt><dd>Formação técnica em Redes de Computadores.</dd></dl></div></div></section>
+        <section id="contact" class="split-section" aria-labelledby="contact-title">
+            <div class="section-heading"><p class="eyebrow">03 / Contato</p><h2 id="contact-title">Vamos conversar.</h2></div>
+            <div class="contact-content"><p>Para conversar sobre dados, desenvolvimento de software e oportunidades profissionais, entre em contato.</p><a class="contact-email" href="mailto:pedrolaminrdg@gmail.com">pedrolaminrdg@gmail.com <span aria-hidden="true">↗</span></a><div class="social-icons"><a href="https://linkedin.com/in/pedro-lamin" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/plamin" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></div>
+        </section>
+    </main>
+<dialog class="project-dialog" id="dialog-laliga" aria-labelledby="dialog-laliga-title"><div class="dialog-header"><p class="eyebrow">Análise de dados</p><button type="button" class="dialog-close" aria-label="Fechar detalhes" autofocus>×</button></div><h2 id="dialog-laliga-title">Dashboard de Estatísticas da La Liga</h2><h3>Objetivo</h3><p>Explorar estatísticas do campeonato, incluindo rankings, pontuação, artilharia e métricas de partidas, jogadores e equipes.</p><h3>Como funciona</h3><p>Consumo de dados via API REST com Python e Requests, seguido de tratamento com pandas e construção de visualizações interativas com Streamlit e Plotly.</p><h3>Funcionalidades</h3><p>Filtros, visualizações e exportação dos dados tratados em CSV.</p><ul class="tags" aria-label="Tecnologias"><li>Python</li><li>pandas</li><li>Streamlit</li><li>Plotly</li></ul><a class="project-link" href="https://github.com/plamin/graficos-laliga" target="_blank" rel="noopener noreferrer">Ver código no GitHub <span aria-hidden="true">↗</span></a></dialog>
+<dialog class="project-dialog" id="dialog-email" aria-labelledby="dialog-email-title"><div class="dialog-header"><p class="eyebrow">Automação</p><button type="button" class="dialog-close" aria-label="Fechar detalhes" autofocus>×</button></div><h2 id="dialog-email-title">Envio automatizado de e-mails</h2><h3>Objetivo</h3><p>Automatizar o envio de cobranças por e-mail a partir da leitura de dados.</p><h3>Como funciona</h3><p>O script lê os dados, aplica validações e utiliza modelos personalizados de mensagem para o envio via SMTP.</p><ul class="tags" aria-label="Tecnologias"><li>Python</li><li>SMTP</li><li>Validação de dados</li></ul><a class="project-link" href="https://github.com/plamin/Envio-De-Emails/tree/main" target="_blank" rel="noopener noreferrer">Ver código no GitHub <span aria-hidden="true">↗</span></a></dialog>
+<dialog class="project-dialog" id="dialog-recruitment" aria-labelledby="dialog-recruitment-title"><div class="dialog-header"><p class="eyebrow">Back-end</p><button type="button" class="dialog-close" aria-label="Fechar detalhes" autofocus>×</button></div><h2 id="dialog-recruitment-title">Plataforma de recrutamento</h2><h3>Objetivo</h3><p>Oferecer cadastro e login de candidatos e recrutadores em uma plataforma de recrutamento.</p><h3>Como funciona</h3><p>Back-end desenvolvido em Python, com armazenamento dos dados em JSON.</p><ul class="tags" aria-label="Tecnologias"><li>Python</li><li>JSON</li><li>Cadastro e login</li></ul><a class="project-link" href="https://github.com/GS-2025-2/hayah/blob/main/HAYAH/backend/app.py" target="_blank" rel="noopener noreferrer">Ver código no GitHub <span aria-hidden="true">↗</span></a></dialog>
+    <footer><span>© <span id="year">2026</span> Pedro Lamin</span><a href="#top">Voltar ao início ↑</a></footer>
 </body>
-
 </html>
