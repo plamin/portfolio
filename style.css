@@ -107,11 +107,12 @@ footer a { min-height: 44px; display: inline-flex; align-items: center; text-dec
 button { font: inherit; cursor: pointer; }
 button:focus-visible, .project-track:focus-visible { outline: 2px solid var(--primary); outline-offset: 5px; }
 button:disabled { opacity: .35; cursor: default; }
-.carousel-toolbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem; }
+.carousel-toolbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .75rem; margin-bottom: 1.25rem; }
 .carousel-toolbar > p { color: var(--muted); font: .8rem Consolas, monospace; }
 .carousel-controls { display: flex; gap: .6rem; }
-.carousel-arrow, .dialog-close { display: grid; place-items: center; min-width: 44px; min-height: 44px; background: transparent; color: var(--text); border: 1px solid var(--line); border-radius: 50%; font-size: 1.25rem; }
-.carousel-arrow:not(:disabled):hover, .dialog-close:hover { color: var(--primary); border-color: var(--primary); }
+.carousel-button, .dialog-close { display: grid; place-items: center; min-width: 44px; min-height: 44px; background: transparent; color: var(--text); border: 1px solid var(--line); border-radius: 50%; font-size: 1.25rem; }
+.carousel-button { padding: .5rem .75rem; border-radius: 2px; font-size: .8rem; }
+.carousel-button:not(:disabled):hover, .dialog-close:hover { color: var(--primary); border-color: var(--primary); }
 .project-track { display: flex; gap: 2rem; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: var(--line) var(--bg); padding-bottom: 1rem; position: relative; }
 .project-slide { flex: 0 0 100%; min-width: 0; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 3rem; align-items: center; scroll-snap-align: start; scroll-snap-stop: always; padding: .75rem 0; }
 .project-copy .project-open { margin-top: .75rem; }
